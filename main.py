@@ -2,10 +2,13 @@ from __future__ import annotations
 
 import logging
 
+from dotenv import load_dotenv
+
 from pipeline import ResearchPipeline, build_arg_parser, config_from_args
 
 
 def main() -> int:
+    load_dotenv("config.env")
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(message)s",
