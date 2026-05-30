@@ -1,0 +1,21 @@
+[project]
+name = "indian-equity-research-platform"
+version = "0.1.0"
+description = "Free-source Indian equity research pipeline for the Nifty LargeMidcap 250 universe."
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "requests>=2.32",
+    "yfinance>=0.2.54",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.2",
+    "python-dotenv>=1.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+    "ignore::requests.exceptions.RequestsDependencyWarning",
+]
