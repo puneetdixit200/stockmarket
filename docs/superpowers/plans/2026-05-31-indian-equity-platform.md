@@ -62,6 +62,7 @@
 - Create: `tests/fixtures/sample_companies.json`
 
 - [x] Add focused automated tests.
-- [ ] Run `pytest -q`.
-- [ ] Run deterministic pipeline output generation.
-- [ ] Commit and push to `https://github.com/puneetdixit200/stockmarket.git`.
+- [x] Run `pytest -q`.
+- [x] Run deterministic pipeline output generation.
+- [x] Run a small yfinance-backed live smoke test with Screener disabled.
+- [x] Commit and push to `https://github.com/puneetdixit200/stockmarket.git`.
